@@ -4,21 +4,26 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <artifactId>build-manager</artifactId>
+        <artifactId>buildman</artifactId>
         <groupId>uk.co.james-carr</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>build-manager-cli</artifactId>
+    <artifactId>buildman-cli</artifactId>
 
     <properties>
         <picocli.version>4.6.3</picocli.version>
         <application.name>buildman</application.name>
-        <application.main-class>uk.co.jamescarr.Buildman</application.main-class>
+        <application.main-class>uk.co.jamescarr.buildman.Buildman</application.main-class>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>uk.co.james-carr</groupId>
+            <artifactId>buildman-component-domain</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>info.picocli</groupId>
             <artifactId>picocli</artifactId>
